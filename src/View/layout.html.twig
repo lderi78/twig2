@@ -1,0 +1,33 @@
+{# layout.html.twig #}
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Titre du parent{% endblock %}</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css"> 
+    <link rel="icon" href="/assets/images/favicon.png">
+</head>
+
+<body>
+    {% block navbar %}
+        <nav>
+        <h1>Titre de Navbar Parent</h1>
+          <ul>
+          <li><a href="./index.html">Home</a></li></li>
+          <li><a href="./screenshots.html">Screenshots</a></li>
+          <li><a href="./videos.html">Videos</a></li>
+          <li><a href="./musics.html">Musics</a></li>
+          <li><a href="./download.html">Download</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    {% endblock %}
+
+    {# Possibilité d'ajouter du code: #}
+    {% block content %}{% endblock %}
+</body>
+</html>
